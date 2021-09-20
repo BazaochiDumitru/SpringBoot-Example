@@ -12,22 +12,22 @@ public class CitiesController {
         return citiesRepository.create(citiesName);
     }
 
-    @GetMapping("countries/{id}")
+    @GetMapping("cities/{id}")
     public String read(@PathVariable Integer id){
         return citiesRepository.read(id);
     }
 
-    @GetMapping("countries")
+    @GetMapping("cities")
     public String readAll(){
         return citiesRepository.readAll();
     }
 
-    @PutMapping("countries/{id}")
+    @PutMapping("cities/{id}")
     public String update(@PathVariable Integer id, @RequestParam String countryName){
         return citiesRepository.update(id, countryName);
     }
 
-    @DeleteMapping("countries")
+    @DeleteMapping("cities")
     public String delete(@PathVariable Integer id){
         return citiesRepository.delete(id);
     }

@@ -7,10 +7,10 @@ public class CitiesRepository {
     ArrayList<String> countries = new ArrayList<>();
 
     public CitiesRepository(){
-        this.countries.add("Moldova");
-        this.countries.add("Ucraina");
-        this.countries.add("Romania");
-        this.countries.add("Turkey");
+        this.countries.add("Balti");
+        this.countries.add("Chisinau");
+        this.countries.add("Cahul");
+        this.countries.add("Orhei");
     }
 
     public String create(String countryName){

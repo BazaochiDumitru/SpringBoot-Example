@@ -25,4 +25,8 @@ public class CitiesRepository {
             return "Not found";
         }
     }
+
+    public String readAll(){
+        return this.cities.toString();
+    }
 }

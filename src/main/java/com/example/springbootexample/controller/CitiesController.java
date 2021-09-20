@@ -17,4 +17,9 @@ public class CitiesController {
         return citiesRepository.read(id);
     }
 
+    @GetMapping("countries")
+    public String readAll(){
+        return citiesRepository.readAll();
+    }
+
 }

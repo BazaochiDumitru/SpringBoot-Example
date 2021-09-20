@@ -13,8 +13,8 @@ public class CitiesRepository {
         this.countries.add("Orhei");
     }
 
-    public String create(String countryName){
-        this.countries.add(countryName);
+    public String create(String citiesName){
+        this.countries.add(citiesName);
         return "Create Country";
     }
 }

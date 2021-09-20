@@ -27,5 +27,8 @@ public class CitiesController {
         return citiesRepository.update(id, countryName);
     }
 
-
+    @DeleteMapping("countries")
+    public String delete(@PathVariable Integer id){
+        return citiesRepository.delete(id);
+    }
 }

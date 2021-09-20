@@ -22,4 +22,10 @@ public class CitiesController {
         return citiesRepository.readAll();
     }
 
+    @PutMapping("countries/{id}")
+    public String update(@PathVariable Integer id, @RequestParam String countryName){
+        return citiesRepository.update(id, countryName);
+    }
+
+
 }

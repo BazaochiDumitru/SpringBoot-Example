@@ -44,7 +44,7 @@ public class City {
 
     //todo
 
-    public String getCountyName(){
+    public String getCountryName(){
         //todo to implement this method
         return "Noname";
     }
@@ -55,7 +55,7 @@ public class City {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", countryId=" + countryId +
-                ", countryName=" + this.getCountyName() +
+                ", countryName=" + this.getCountryName() +
                 '}';
     }
 }

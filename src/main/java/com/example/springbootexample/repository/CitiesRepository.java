@@ -43,7 +43,8 @@ public class CitiesRepository {
         try {
             City City = this.cities.stream().filter(element -> id.equals(element.getId())).findFirst().orElse(null);
             if(City == null){
-                return "City not found";            }
+                return "City not found";
+            }
             this.cities.remove(City);
             return "City deleted";
         } catch (Exception exception){

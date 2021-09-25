@@ -6,16 +6,18 @@ public class City {
 
     private Integer countryId = null;
     public static Integer autoincrementId = 0;
+    private String countryName;
 
     City(){
 
     }
 
-    public City(String name, Integer countryId){
+    public City(String name, Integer countryId, String countryName){
         City.autoincrementId++;
         this.id = City.autoincrementId;
         this.name = name;
         this.countryId = countryId;
+        this.countryName = countryName;
     }
 
     public Integer getId() {
@@ -44,9 +46,13 @@ public class City {
 
     //todo
 
+    public void setCountryName(String countryName) {
+        this.countryName = countryName;
+    }
+
     public String getCountryName(){
         //todo to implement this method
-        return "Noname";
+        return countryName;
     }
 
     @Override

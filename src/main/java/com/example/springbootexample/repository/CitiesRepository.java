@@ -29,10 +29,11 @@ public class CitiesRepository {
         return this.cities.toString();
     }
 
-    public String update(Integer id, String CityName){
+    public String update(Integer id, String cityName, String countryName){
         try {
             City City = this.cities.stream().filter(element -> id.equals(element.getId())).findFirst().orElse(null);
-            City.setName(CityName);
+            City.setName(cityName);
+            City.setCountryName(countryName);
             return "City updated";
         } catch (Exception exception){
             return "City not found";
